@@ -1,0 +1,168 @@
+Program 1:-
+
+void main() {
+//Write a Dart program to find out maximum number when
+// 2 numbers are given.
+  int maxi = max(4, 7);
+  print("Maximum = $maxi");
+}
+
+int max(int a, int b) {
+  int c;
+  return c = a > b ? a : b;
+}
+
+Program 2:-
+
+void main() {
+//Write a Dart program to find out whether a given number is
+//odd or even.
+  print(oddeven(6));
+}
+
+String oddeven(int n) {
+  if (n % 2 == 0) {
+    return "Number $n is even";
+  } else {
+    return "Number $n is odd";
+  }
+}
+
+Program 3:-
+
+void main() {
+//Write a Dart program to find the simple interest when
+//the principle, rate of interest and term is given
+  double SI = SimpleInterest(10000, 8.5, 18);
+  print("Simple Interest = $SI, where time period is in terms of months.");
+}
+
+double SimpleInterest(int P, double R, int T) {
+  return (P * T * R) / 100;
+}
+
+Program 4:-
+
+void main() {
+//Write a Dart program to find the factorial of a given number
+  int n = 4;
+  print("Factorial of $n is ${Factorial(n)}");
+}
+
+int Factorial(int n) {
+  if (n == 1) {
+    return 1;
+  }
+  return n * Factorial(n - 1);
+}
+
+Program 5:-
+
+void main() {
+// Write a Dart program to find the summation upto n numbers.
+  int n = 11;
+  print("Summation upto $n numbers is ${sum(n)}");
+}
+
+int sum(int n) {
+  if (n == 1) {
+    return 1;
+  }
+  return n + sum(n - 1);
+}
+
+Program 6:-
+
+void main() {
+//WAP to find perimeter and area of rectangle.
+  print("The area of the rectangle is ${findArea(4, 2)}");
+  print("The perimeter of the rectangle is ${findPerimeter(4, 2)}");
+}
+
+int findPerimeter(int length, int breadth) {
+  return 2 * (length + breadth);
+}
+
+int findArea(int length, int breadth) {
+  return length * breadth;
+}
+
+Program 7:-
+
+//Write a Dart program to find out whether a given character
+// is a vowel or a consonant
+void main() {
+  print(vowelConsonant('s'));
+}
+
+String vowelConsonant(String alphabet) {
+  if (alphabet == 'a' ||
+      alphabet == 'e' ||
+      alphabet == 'i' ||
+      alphabet == 'o' ||
+      alphabet == 'u') {
+    return "Alphabet $alphabet is a vowel";
+  } else {
+    return "Alphabet $alphabet is a consonant";
+  }
+}
+
+Program 8:-
+
+//Write a Dart program to find out whether a given string is a
+//palindrome.
+void main() {
+  print(Palindrome("menem"));
+}
+
+String Palindrome(String pal) {
+  String rev = "";
+  int n;
+  n = pal.length;
+  for (int i = n - 1; i >= 0; i--) {
+    rev += pal[i];
+  }
+  if (pal == rev) {
+    return "String $pal is a Palindrome";
+  } else {
+    return "String $pal is not a Palindrome";
+  }
+}
+
+Program 9:-
+
+//Write a Dart program to reverse a given string. Do not use
+//library function
+void main() {
+  String inp = "naanaa";
+  print("Reversal of the string $inp is ${Reverse(inp)}");
+}
+
+String Reverse(String inp) {
+  String rev = "";
+  int n = inp.length;
+  for (int i = n - 1; i >= 0; i--) {
+    rev += inp[i];
+  }
+  return rev;
+}
+
+Program 10:-
+
+//Write a Dart program to find the largest element in the array
+//of integers.
+void main() {
+  print("The maximum element in the list is ${maxEle([22, 95, 400, 59])}");
+}
+
+int maxEle(List<int> arr) {
+  int max = 0;
+  for (int i = 0; i < arr.length; i++) {
+    if (max > arr[i]) {
+      max = max;
+    } else {
+      max = arr[i];
+    }
+  }
+  return max;
+}

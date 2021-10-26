@@ -1,0 +1,74 @@
+
+Introduction to Flutter:-
+--------------------------
+To develop a mobile application on Android (based on Java Language) and iOS (based on Objective-C/Swift Language) frameworks, we need two different codes, which is quite complex.
+To overcome this complexity, there exists hybrid mobile application framework (uses HTML for UI and JavaScript for application logic), which provides a common code for both frameworks.
+
+Flutter is such a simple and high performance framework, which is based on Dart language.
+
+> Flutter is a hybrid mobile application framework which provides high performance by rendering the UI directly in the operating system's canvas rather than through native framework.
+
+> It also offers many ready to use widgets to create modern application. Designing of these widgets is as simple as designing HTML.
+
+> The Flutter application is itself a widget, where its widgets support animation and gestures. Its application logic is based on reactive programming.
+
+Features of Flutter:-
+==============
+> Modern and reactive framework.
+
+> Uses Dart programming language which is very easy to learn.
+
+> Development is fastly done.
+
+> Beautiful and fluid UIs.
+
+> Widget Catalog is relatively huge.
+
+> Runs same UI for multiple platforms.
+
+> High performance application.
+
+Advantages of Flutter:-
+=================
+> Flutter comes with beautiful and customizable widgets, fulfilling all custom needs and requirements of an outstanding mobile application.
+
+> Dart language has a large repository of software packages, which lets you to extend the capabilities of your application.
+
+> Developers need to write just a single code for both Android and iOS.
+
+> Since it is a single code base, it requires lesser testing.
+
+> Flutter's simplicity makes it a good candidate for fast development.
+
+> It allows developers to have full control over the widgets and its layout.
+
+> It offers great developer tools, including the amazing hot reload and hot restart.
+
+Disadvantages of Flutter:-
+===================
+> Requirement of learning a new language called Dart (but is also easy to learn).
+
+> In Flutter, UI and logic is intermixed, which can be overcomed by using coding/ high level module, in order to seperate UI and logic.
+
+> Developers might have hard time in choosing a right development tool out of the pool, and Flutter happens to be just another framework to develop mobile applications.
+
+Tip : UI - User Interface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

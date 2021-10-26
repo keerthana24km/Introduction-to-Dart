@@ -1,0 +1,27 @@
+
+History of Dart programming language:-
+---------------------------------------------
+
+Dart is a programming language designed for client development platforms such as web and mobile applications. It can also be used to build server and desktop applications.
+
+> It is a programming language introduced by Google, which was unveiled at the GOTO conference in Aarhus, Denmark, October 10 - 12, 2011.
+
+> The project was founded by Lars Bak and Kasper Lund. Dart 1.0 was released on November 14, 2013.
+
+> Initially, Dart had a mixed reception and had been criticized by some for fragmenting the web, due to the original plans to include a Dart VM Chrome.
+   The above plans were dropped in 2015, with the release of Dart to focus instead on compiling Dart to JavaScript.
+
+> In August 2018, Dart 2.0 was released with language changes, including a sound type system.
+
+> Dart 2.6 introduced a new extension, called the dart2native. This feature extends native compilation to the Linux, macOS and Windows desktop platforms.
+
+> Earlier, developers were able to create new tools only using Android or iOS devices. This extension made it possible to compose a Dart program into self-contained executables.
+
+> The new extension is also integrated with a Flutter toolkit, thus making it possible to use the compiler on small services (Ex : Backend Support).
+
+> Ecma International has formed technical committee TC52 to work on standardizing Dart, which approved the Dart language specification first edition in July 2014, at its 107th General Assembly, and a second edition in December 2014.
+
+> As much as Dart can be compiled to standard JavaScript, it works effectively in any modern browser.
+
+
+

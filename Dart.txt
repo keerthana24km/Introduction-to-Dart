@@ -1,0 +1,1347 @@
+DART PROGRAMS
+------------------------
+
+Date : 22/03/2021
+
+Program 1:-
+
+void main() {
+print("Hello World");
+}
+
+Program 2:-
+
+void main() {
+print("This is my first application");
+print(4);
+print(3+1);
+print(12/3);
+print(true);
+}
+
+Program 3:-
+
+void main() {
+
+  // Integer
+  int a;
+  var A = 10;
+  int hexVal = 0x12AB9CDA;
+  
+  // Double
+  double b = 20.24;
+  var B = 28.9163;
+  double expnt = 12e5;
+  
+  // String value  
+  String c;
+  var C = "Korn";
+  
+  // Boolean value
+  bool d = true;
+  var D = false;
+  
+  print(a);
+  print(c);
+  print(hexVal);
+  print(expnt);
+  print(A);
+  print(C);
+}
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Date : 23/03/2021
+
+Program 4:-
+
+void main() {
+ //Literals
+  var isCool = true;
+  int n=2;
+  "John";
+  
+  //Various ways to define String Literals
+  String s1 = 'Single';
+  String s2 = "Double";
+  String s3 = 'It\'s easy';
+  String s4 = "It's easy";
+  String s5 = 'This is a very long string which has more than ten words in it. '
+              'It is very important to understand this message';
+  print(s5);
+  
+  //String Interpolation
+  String name = "Keerthana";
+  String msg = "My name is $name";
+  print(msg);
+    print("My name is $name");
+  print("Number of characters in name is ${name.length}");
+  int l = 20;
+  int b = 10;
+  print("The sum of $l and $b is ${l+b}");
+  print("The sum of l and b is ${l+b}");
+  print("The area of rectangle having length $l and breadth $b is ${l*b}");
+}
+
+Program 5:-
+
+void main() {
+//final keyword
+  final cityName = "Mumbai";
+  //cityName = "Delhi";
+  final String countryName = "India";
+  
+//const keyword  
+  const PI = 3.14;
+  const double gravity = 9.8;
+}
+
+class Circle{
+final colour = 'Green';
+  static const PI = 3.14;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Date : 24/03/2021
+
+Program 6:-
+
+void main() {
+// IF and ELSE statements
+  var salary = 25000;
+  if(salary>20000){
+    print("Congratulations, You've got promotion !");
+  }
+  else{
+print("You need to work hard !");
+  }
+  // IF ELSE IF Ladder statements
+  var marks = 89;
+  if(marks>=90 && marks<100){
+print("A+ grade");
+  }
+  else if(marks>=80 && marks<90){
+print("A grade");
+  }
+  else if(marks>=70 && marks<80){
+print("B grade");
+  }
+  else if(marks>=60 && marks<70){
+print("C grade");
+  }
+  else if(marks>=40 && marks<60){
+print("D grade");
+  }
+  else if(marks>=0 && marks<30){
+print("You've failed");
+  }
+  else{
+print("Invalid marks");
+  }
+}
+
+Program 7:-
+
+void main() {
+//Conditional statements
+//1. cond1 ? exp1 : exp2
+//If true, evaluates and returns the value of exp1
+//If false, evaluates and returns the value of exp2
+  int a=2;
+  int b=3;
+  int smallNum;
+  a<b ? print("$a is smaller") : print("$b is smaller");
+  smallNum = a<b ? a : b;
+  print("$smallNum is smaller");  
+//2. exp1 ?? exp2
+//If exp1 is not null, returns it's value, otherwise
+//Evaluates and returns the value of exp2
+  String name = null;
+  String nametoprint = name ?? "Guest User";
+  print(nametoprint);
+}
+
+Program 8:-
+
+void main() {
+//Switch Case statements : Applicable only for int and String
+String grade = 'B';
+  switch(grade){
+    case 'A': print("Excellent!");
+              break;
+    case 'B': print("Very Good!");
+              break;
+    case 'C': print("Good, work hard.");
+              break;
+    case 'F': print("You've failed");
+              break;
+    default: print("Invalid Grade");
+  }
+}
+
+Program 9:-
+
+void main() {
+//Write a Dart program to find out maximum number when
+// 2 numbers are given.
+int a=4;
+int b=7;
+int max;
+max = a>b ? a : b;
+print("Maximum = $max");
+}
+
+Program 10:-
+
+void main() {
+//Write a Dart program to find out whether a given number is
+//odd or even.
+  int n=6;
+  n%2==0 ? print("Number $n is even") : print("Number $n is odd");
+}
+
+Program 11:-
+
+void main() {
+//Write a Dart program to find the GCD of 2 numbers
+  int m=4;
+  int n=6;
+  int gcd;
+  for(int x=1;x<n+1;x++){
+  if(m%x==0 && n%x==0){
+     gcd = x;
+  }
+  }
+  print("GCD of 2 numbers is $gcd");
+}
+
+Program 12:-
+
+void main() {
+//Write a Dart program to find the simple interest when
+//the principle, rate of interest and term is given
+  int P=10000;
+  double R=8.5;
+  int T=18;
+  double SI=(P*T*R)/100;
+  print("Simple Interest = $SI, where time period is in terms of months.");
+}
+
+Program 13:-
+
+void main() {
+//Write a Dart program to find the factorial of a given number
+  int n=4;
+  int fact=1;
+  for(int i=1;i<n+1;i++){
+     fact=fact*i;
+  }
+  print("Factorial of $n is $fact");
+}
+
+Program 14:-
+
+void main() {
+// Write a Dart program to find the summation upto n numbers.
+int n=10;
+  int sum=0;
+  for(int i=1;i<n+1;i++){
+     sum+=i;
+  }
+  print("Summation upto $n numbers is $sum");
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Date : 25/03/2021
+
+Program 15:-
+
+void main() {
+// FOR loop
+// WAP to find even numbers btw 1 to 10
+  for(int i=1;i<=10;i++){
+    if(i%2==0){
+     print(i);
+    }
+  }
+//List ..in for loop
+  List zodiacsigns = ["Aries","Gemini","Cancer","Leo"];
+  for(String zs in zodiacsigns){
+      print(zs);
+  }
+}
+
+Program 16:-
+
+void main() {
+// WHILE loop
+// WAP to find even numbers btw 1 to 10
+  var i = 1;
+  while(i<=10){
+   if(i%2==0){
+     print(i);
+   }
+    i++;
+  }
+}
+
+Program 17:-
+
+void main() {
+// DO WHILE loop
+// WAP to find even numbers btw 1 to 10
+ int i=1;
+  do{
+    if(i%2==0){
+      print(i);
+    }
+    i++;
+  }while(i<=10);
+}
+
+Program 18:-
+
+void main() {
+// BREAK keyword
+// Using labels
+ myOuterLoop: for(int i=1;i<=3;i++){
+         innerLoop:for(int j=1;j<=3;j++){
+                    print("$i $j");
+                   if(i==2 && j==2){
+                     break myOuterLoop;
+                   }
+                 }
+ }
+}
+
+Program 19:-
+
+void main() {
+// CONTINUE keyword
+// Using labels
+ myOuterLoop: for(int i=1;i<=3;i++){
+         innerLoop:for(int j=1;j<=3;j++){
+                   if(i==2 && j==2){
+                     continue myOuterLoop;
+                   }
+                 print("$i $j");
+                 }
+ }
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Date : 30/03/2021
+
+Program 20:-
+
+// Define Function, Pass parameters, Return value, Test for NULL
+void main() {
+findPerimeter(4,2);
+  int area = findArea(4,2);
+  int per = findPer(4,2);
+  print("The area of the rectangle is $area");
+   print("The peri of the rectangle is $per");
+}
+void findPerimeter(int length,int breadth){
+  int perimeter = 2*(length+breadth);
+  print("The perimeter of the rectangle is $perimeter");
+}
+int findArea(int length,int breadth){
+int area = length*breadth;
+  return area;
+}
+int findPer(int length,int breadth){
+int per=length+breadth;
+}
+
+Program 21:-
+
+void main() {
+printCities("New York","Delhi","Sydney");
+  print("");
+  printCountries("India","Australia");
+}
+//Required Parameters
+void printCities(String name1,String name2,String name3){
+print("Name 1 is $name1");
+  print("Name 2 is $name2");
+  print("Name 3 is $name3");
+}
+//Optional Positional Parameters
+void printCountries(String name1,String name2,[var name3]){
+print("Name 1 is $name1");
+  print("Name 2 is $name2");
+  print("Name 3 is $name3");
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Date : 31/03/2021
+
+Program 22:-
+
+//Optional Named Parameters
+void main() {
+var result = findVolume(2,breadth:3,height:10);
+  var res = findVolume(2,height:10,breadth:3);
+  print("Volume is $result");
+  print("Volume is also $res");
+}
+num findVolume(int length,{var breadth,var height}){
+return length*breadth*height;
+}
+
+Program 23:-
+
+//Optional Default Parameters
+void main() {
+findVolume(10);
+  print("");
+  findVolume(10,breadth:5,height:30);
+  print("");
+  findVolume(10,height:30,breadth:5);
+}
+void findVolume(int length,{int breadth=2,int height=20}){
+print("Length is $length");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  print("Volume is ${length*breadth*height}");
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Date : 01/04/2021
+
+Program 24:-
+
+void main(){
+  print("CASE 1");
+  //When name of exception is known, use ON Clause
+  try{
+     int result = 12~/0;
+     print("The result is $result");
+  }
+  on IntegerDivisionByZeroException{
+    print("Cannot divide by zero");
+  }
+  print("");
+  print("CASE 2");
+  //When name of exception is not known, use CATCH Clause
+  try{
+     int result = 12~/0;
+     print("The result is $result");
+  }
+  catch(e){
+    print("The Exception is $e");
+  }
+  print("");
+  print("CASE 3");
+  //To trace the events before exception occurence, use STACK TRACE with Exception    Object
+  try{
+     int result = 12~/0;
+     print("The result is $result");
+  }
+  catch(e,s){
+    print("The exception is $e");
+    print("Stack Trace \n $s");
+  }
+  print("");
+  print("CASE 4");
+  //Whether the Exception occurs or not, the finally clause is always executed
+  try{
+     int result = 12~/3;
+     print("The result is $result");
+  }
+  on IntegerDivisionByZeroException{
+    print("Cannot divide by zero");
+  }
+  finally{
+  print("The FINALLY Clause is always executed");
+  }
+print("");
+  print("CASE 5");
+  //Custom Exception
+  try {
+    depositAmount(-100);
+  } on DepositException {
+    print("You cannot deposit an amount less than 0");
+  }
+}
+class DepositException implements Exception {}
+void depositAmount(int amount) {
+  if (amount < 0) {
+    throw new DepositException();
+  }
+}
+
+Program 25:-
+
+void main() {
+  var student1 = Student();
+  student1.id = 001;
+  student1.name = "Peter";
+  print("ID is ${student1.id}, Name is ${student1.name}");
+  student1.study();
+  student1.sleep();
+  var student2 = Student();
+  student2.id = 002;
+  student2.name = "John";
+  print("ID is ${student2.id}, Name is ${student2.name}");
+  student2.study();
+  student2.sleep();
+}
+
+//Define properties and behaviour of a student
+class Student {
+  var id = -5;
+  var name;
+  void study() {
+    print("${this.name} is now studying");
+  }
+
+  void sleep() {
+    print("${this.name} is now sleeping");
+  }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------
+Date : 02/04/2021
+
+Program 26:-
+
+void main() {
+  var student1 = Student();
+  student1.id = 001;
+  student1.name = "Peter";
+  print("ID is ${student1.id}, Name is ${student1.name}");
+  student1.study();
+  student1.sleep();
+  var student2 = Stud(002, "John");
+  print("ID is ${student2.id}, Name is ${student2.name}");
+  student2.study();
+  student2.sleep();
+  var student3 = Student.userDefinedConstructor();
+  student3.id = 003;
+  student3.name = "Ken";
+  print("ID is ${student3.id}, Name is ${student3.name}");
+  var student4 = Student.userConstructor(004, "Paul");
+  print("ID is ${student4.id}, Name is ${student4.name}");
+}
+
+//Define properties and behaviour of a student
+class Student {
+  var id = -5;
+  var name;
+  void study() {
+    print("${this.name} is now studying");
+  }
+
+  Student() {
+    //Default Constructor
+    print("This is default constructor");
+  }
+  Student.userDefinedConstructor() {
+    //Named Constructor
+    print("This is user defined constructor");
+  }
+  Student.userConstructor(this.id, this.name);
+  void sleep() {
+    print("${this.name} is now sleeping");
+  }
+}
+
+class Stud {
+  var id = -5;
+  var name;
+  void study() {
+    print("${this.name} is now studying");
+  }
+
+  Stud(this.id, this.name) {
+    //Parameterized Constructor
+  }
+  void sleep() {
+    print("${this.name} is now sleeping");
+  }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Date : 05/04/2021
+
+Program 27:-
+
+//Getter and Setter methods
+void main() {
+  var student = Student();
+  student.name = "Peter";
+  print(student.name);
+  student.percentage = 438;
+  print(student.percentage);
+}
+
+class Student {
+  var name; // Instance variable with default Setter and Getter
+  var _percent; // Instance variable with customized Setter and Getter
+  void set percentage(double marks_scored) =>
+      _percent = (marks_scored / 500) * 100;
+  double get percentage => _percent;
+}
+
+Program 28:-
+
+//Concept of Inheritance
+void main() {
+  var dog = Dog();
+  dog.breed = "Shitzu";
+  dog.color = "Brown";
+  print("The dog breed is ${dog.breed}, which is ${dog.color} in color");
+  dog.eat();
+  var cat = Cat();
+  cat.age = 4;
+  print("The age of the cat is ${cat.age}");
+  cat.eat();
+}
+
+class Animal {
+  var color;
+  void eat() {
+    print("Eat!");
+  }
+}
+
+class Dog extends Animal {
+  var breed;
+  void bark() {
+    print("Bark!");
+  }
+}
+
+class Cat extends Animal {
+  var age;
+  void meow() {
+    print("Meow!");
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Date : 06/04/2021
+
+Program 29:-
+
+//Method Overriding in Inheritance
+void main() {
+  var dog = Dog();
+  dog.eat();
+  print(dog.color);
+}
+
+class Animal {
+  var color = "Brown";
+  void eat() {
+    print("Animal is Eating!");
+  }
+}
+
+class Dog extends Animal {
+  var breed;
+  var color = "Black";
+  void bark() {
+    print("Bark!");
+  }
+
+  void eat() {
+    print("Dog is Eating!");
+    super.eat();
+    print("Lots more to eat!!");
+  }
+}
+
+Program 30:-
+
+//Inheritance with default and parameterised constructor
+//Inheritance with named constructor
+void main() {
+  var dog1 = Dog("Labrador", "Brown");
+  print("");
+  var dog2 = Dog("Pug", "White");
+  print("");
+  var dog3 = Dog.namedConstructor("Retriever", "Golden");
+}
+
+class Animal {
+  var color;
+  Animal(String color) {
+    this.color = color;
+    print("Animal class constructor");
+  }
+  Animal.namedConstructor(String color) {
+    this.color = color;
+    print("Animal class named constructor");
+  }
+}
+
+class Dog extends Animal {
+  var breed;
+  Dog(String breed, String color) : super(color) {
+    this.breed = breed;
+    print("Dog class constructor");
+  }
+  Dog.namedConstructor(String breed, String color)
+      : super.namedConstructor(color) {
+    this.breed = breed;
+    print("Dog class named constructor");
+  }
+}
+
+Program 31:-
+
+//Abstract class
+void main() {
+  var rec = Rectangle();
+  rec.draw();
+  var cir = Circle();
+  cir.draw();
+}
+
+abstract class Shape {
+  var x;
+  var y;
+  void draw();
+  void myFunction() {
+    //Code
+  }
+}
+
+class Rectangle extends Shape {
+  void draw() {
+    print("Drawing Rectangle...");
+  }
+}
+
+class Circle extends Shape {
+  void draw() {
+    print("Drawing Circle...");
+  }
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Date : 07/04/2021
+
+Program 32:-
+
+//Write a Dart program to find out whether a given character
+// is a vowel or a consonant
+void main() {
+  String alphabet = 'e';
+  if (alphabet == 'a' ||
+      alphabet == 'e' ||
+      alphabet == 'i' ||
+      alphabet == 'o' ||
+      alphabet == 'u') {
+    print("Alphabet $alphabet is a vowel");
+  } else {
+    print("Alphabet $alphabet is a consonant");
+  }
+}
+
+Program 33:-
+
+//Write a Dart program to find out whether a given string is a
+//palindrome.
+void main() {
+  String pal = "01010101010";
+  String rev = "";
+  int n;
+  n = pal.length;
+  for (int i = n - 1; i >= 0; i--) {
+    rev += pal[i];
+  }
+  if (pal == rev) {
+    print("$pal is a Palindrome");
+  } else {
+    print("$pal is not a Palindrome");
+  }
+}
+
+Program 34:-
+
+//Interface
+void main() {
+  var tv = Television();
+  tv.volumeUp();
+  tv.volumeDown();
+  tv.ac();
+}
+
+class Remote {
+  void volumeUp() {
+    print("---Volume Up from Remote---");
+  }
+
+  void volumeDown() {
+    print("---Volume Down from Remote---");
+  }
+}
+
+class AnotherClass {
+  void ac() {
+    //Some code
+  }
+}
+
+//Remote acts as Interface
+class Television implements Remote, AnotherClass {
+  void volumeUp() {
+    print("---Volume Up on Television---");
+  }
+
+  void volumeDown() {
+    print("---Volume Down on Television---");
+  }
+
+  void ac() {
+    print("Another Class");
+  }
+}
+
+Program 35:-
+
+//Static Methods and Variables
+void main() {
+  print(Circle.pi);
+  Circle.area();
+}
+
+class Circle {
+  static var pi = 3.14;
+  var color;
+  static void area() {
+    print("Area of circle having radius 2 is 12.52.");
+    //var nf = normalFunction(); //Instance members can't be accessed from a static method.
+    //this.color; //this keyword cannot be used,instance variables cannot be called in static methods.
+  }
+
+  void normalFunction() {
+    print("My normal Function");
+    Circle.pi;
+    Circle.area();
+    this.color;
+  }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+Date : 08/04/2021
+
+Program 36:-
+
+//Lambda Expression
+void main() {
+  //1st way
+  var add = (int a, int b) {
+    var sum = a + b;
+    print(sum);
+  };
+  var mul = (int n) {
+    return n * 4;
+  };
+  //2nd way : Using Short hand syntax
+  var addition = (int a, int b) => print(a + b);
+  var multiple = (int n) => n * 4;
+  //Calling Lambda Function
+  add(2, 3);
+  print(mul(9));
+  addition(4, 1);
+  print(multiple(4));
+}
+
+Program 37:-
+
+//Higher Order Function
+void main() {
+  var mul = (n) => n * 4;
+  var f1 = someFunction("Hello", mul);
+  var add = (a, b) => print(a + b);
+  var f2 = task(add);
+}
+
+void someFunction(String msg, Function myFunc) {
+  print(msg);
+  print(myFunc(10));
+}
+
+void task(Function add) {
+  add(2, 5);
+}
+
+Program 38:-
+
+//Closures
+void main() {
+  //A closure is a function has access to parent scope, even after the scope is closed.
+  String mesg = "Dart is Good.";
+  var showMsg = () {
+    mesg = "Dart is Awesome!";
+    print(mesg);
+  };
+  showMsg();
+  //A closure is a function object that has access to variables in it's lexical scope,
+  //even when the function is used outside it's original scope.
+  Function talk = () {
+    String msg = "Hi";
+    Function say = () {
+      msg = "Hello";
+      print(msg);
+    };
+    return say;
+  };
+  var speak = talk();
+  speak();
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Date : 09/04/2021
+
+Program 39:-
+
+//Fixed Length List
+void main() {
+  var numbersList = List.filled(5, 0);
+  numbersList[0] = 73;
+  numbersList[1] = 28;
+  numbersList[4] = 67;
+  print(numbersList[0]);
+  print("");
+  numbersList[0] = 99;
+  print(numbersList[0]);
+  print("");
+  for (int i in numbersList) {
+    print(i);
+  }
+  print("");
+  numbersList.forEach((i) => print(i));
+  print("");
+  for (int i = 0; i < numbersList.length; i++) {
+    print(numbersList[i]);
+  }
+}
+
+Program 40:-
+
+//Growable List
+void main() {
+  var numbersList = [73, 28, 57];
+  numbersList.add(10);
+  numbersList.add(39);
+  print(numbersList[0]);
+  print("");
+  numbersList[0] = 99;
+  print(numbersList[0]);
+  print("");
+  for (int i in numbersList) {
+    print(i);
+  }
+  print("");
+  numbersList.remove(10);
+  numbersList.forEach((i) => print(i));
+  print("");
+  numbersList.removeAt(0);
+  for (int i = 0; i < numbersList.length; i++) {
+    print(numbersList[i]);
+  }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Date : 10/04/2021
+
+Program 41:-
+//Set and Hash Set
+void main() {
+  Set<String> countries = Set.from(["USA", "India", "China"]);
+  Set<int> numbersSet = Set();
+  numbersSet.add(73);
+  numbersSet.add(28);
+  numbersSet.add(10);
+  numbersSet.add(39);
+  for (String i in countries) {
+    print(i);
+  }
+  print("");
+  for (int i in numbersSet) {
+    print(i);
+  }
+  print("");
+  print(numbersSet.contains(28));
+  print(numbersSet.isEmpty);
+  print(numbersSet.length);
+  print("");
+  numbersSet.remove(10);
+  numbersSet.forEach((i) => print(i));
+  print("");
+}
+
+Program 42:-
+
+//Map and Hash Map
+void main() {
+  Map<String, int> countryDialCode = {"USA": 1, "India": 91, "Pakistan": 92};
+  Map<String, String> fruits = Map();
+  fruits["apple"] = "Red";
+  fruits["banana"] = "Yellow";
+  fruits["guava"] = "Green";
+  fruits["pineapple"] = "Yellow";
+  print(fruits["apple"]);
+  print("");
+  fruits.forEach((key, value) => {print("Key : $key and Value : $value")});
+  print("");
+  for (String i in fruits.keys) {
+    print(i);
+  }
+  print("");
+  fruits.update("apple", (value) => "Green");
+  for (String i in fruits.values) {
+    print(i);
+  }
+  print("");
+  fruits.remove("pineapple");
+  fruits.forEach((key, value) => {print("Key : $key and Value : $value")});
+  print("");
+  print(fruits.isEmpty);
+  print(fruits.length);
+  print("");
+  countryDialCode
+      .forEach((key, value) => {print("Key : $key and Value : $value")});
+}
+
+------------------------------------------------------------------------------------------------------------------------------------
+Date : 11/04/2021 to 20/04/2021
+
+Program 43:-
+
+//Callable function
+void main() {
+  var per = Person();
+  per.call("Peter", 25);
+  var emp = Employee();
+  String msg = emp("John", "Johnsons and Company");
+  print(msg);
+}
+
+class Person {
+  void call(String name, int age) {
+    print("The name of the person is $name and is aged $age years old.");
+  }
+}
+
+class Employee {
+  String call(String name, String company) {
+    return "The employee named $name works for $company.";
+  }
+}
+
+Program 44:-
+
+void main() {
+//Write a Dart program to find out whether a given number is
+//prime or not
+  int n = 21;
+  int flag = 0;
+  if (n < 0) {
+    print("Please enter a positive number");
+  }
+  for (int i = 2; i <= n / 2; ++i) {
+    if (n % i == 0 && n % n / 2 == 0) {
+      flag = 1;
+      break;
+    }
+  }
+  if (flag == 0) {
+    print("$n is a prime number");
+  } else {
+    print("$n is not a prime number");
+  }
+}
+
+Program 45:-
+
+//Write a Dart program to reverse a given string. Do not use
+//library function
+void main() {
+  String inp = "naanaan";
+  String rev = "";
+  int n = inp.length;
+  for (int i = n - 1; i >= 0; i--) {
+    rev += inp[i];
+  }
+  print("Reversal of the string $inp is $rev");
+}
+
+Program 46:-
+
+//Write a Dart program to create an array of integers.
+//Initialize with values and print the values.
+void main() {
+  List<int> num = [10, 20, 30, 40, 50];
+  for (int i = 0; i < num.length; i++) {
+    print(num[i]);
+  }
+}
+
+Program 47:-
+
+//Write a Dart program to find the largest element in the array
+//of integers.
+void main() {
+  List<int> arr = [22, 95, 400, 59];
+  int max = 0;
+  for (int i = 0; i < arr.length; i++) {
+    if (max > arr[i]) {
+      max = max;
+    } else {
+      max = arr[i];
+    }
+  }
+  print("The maximum element in the list is $max");
+}
+
+Program 48:-
+
+//Write a Dart program to search for an element in the array of
+//integers.
+void main() {
+  List<int> array = [10, 21, 32, 43, 54];
+  int key = 32;
+  int flag = 0;
+  int i;
+  for (i = 0; i < array.length; i++) {
+    if (key == array[i]) {
+      flag = 1;
+      break;
+    }
+  }
+  if (flag == 1) {
+    print("The key is found at index $i");
+  } else {
+    print("Key is not found!");
+  }
+}
+
+Program 49:-
+
+//Write a Dart program to find the sum of all the elements in an
+//array of integers.
+void main() {
+  List<int> n = [11, 22, 33, 44];
+  int sum = 0;
+  for (int i = 0; i < n.length; i++) {
+    sum += n[i];
+  }
+  print("Sum = $sum");
+}
+
+Program 50:-
+
+//Write a Dart program to find the no of odd elements
+//in the array of integers.
+void main() {
+  List<int> arr = [2, 17, 26, 32, 49];
+  int count = 0;
+  for (int i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 != 0) {
+      count++;
+    }
+  }
+  print("The number of odd numbers present in the list is $count");
+}
+
+Program 51:-
+
+//Write a program to accept the elements of a single dim array
+//and out whether it has any duplicate elements.
+void main() {
+  List<int> nums = [10, 20, 20, 30, 40, 10, 50];
+  List<int> dupl = [];
+  for (int i = 0; i < nums.length - 1; i++) {
+    for (int j = i + 1; j < nums.length; j++) {
+      if (nums[i] == nums[j]) {
+        dupl.add(nums[i]);
+      }
+    }
+  }
+  for (int k = 0; k < dupl.length; k++) {
+    print("Duplicate element is present. The element is ${dupl[k]}.");
+  }
+}
+
+Program 52:-
+
+// Write a Dart class to find perimeter and area of a circle.
+import 'dart:math';
+
+void main() {
+  var cir = Circle();
+  print("Perimeter is ${cir.perimeter(5.2)}");
+  print("Area is ${cir.area(5.2)}");
+}
+
+class Circle {
+  double perimeter(double r) {
+    return 2 * pi * r;
+  }
+
+  double area(double r) {
+    return pi * r * r;
+  }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Date : 21/04/2021 and 22/04/2021
+
+Program 53:-
+
+//Write a Dart class to find perimeter and area of a triangle.
+void main() {
+  var tri = Triangle();
+  print("Perimeter of a triangle is ${tri.perimeter(5.5, 8.5, 6.0)}");
+  print("Area of a triangle is ${tri.area(8.5, 5.0)}");
+}
+
+class Triangle {
+  double perimeter(double a, double b, double c) {
+    return a + b + c;
+  }
+
+  double area(double b, double h) {
+    return 0.5 * b * h;
+  }
+}
+
+Program 54:-
+
+//Write a Dart class to find the quadrant, when the co-ordinates
+//of the point are given.
+void main() {
+  var quad = Quadrant();
+  print(quad.quadrant(4.0, 2));
+}
+
+class Quadrant {
+  String quadrant(double x, double y) {
+    var q;
+    if (x > 0 && y > 0) {
+      q = "The points are in 1st quadrant";
+    } else if (x < 0 && y > 0) {
+      q = "The points are in 2nd quadrant";
+    } else if (x < 0 && y < 0) {
+      q = "The points are in 3rd quadrant";
+    } else if (x > 0 && y < 0) {
+      q = "The points are in 4th quadrant";
+    } else if (x == 0 && y > 0) {
+      q = "The point lies on +ve y axis";
+    } else if (x == 0 && y < 0) {
+      q = "The point lies on -ve y axis";
+    } else if (x > 0 && y == 0) {
+      q = "The point lies on +ve x axis";
+    } else if (x < 0 && y == 0) {
+      q = "The point lies on -ve x axis";
+    } else if (x == 0 && y == 0) {
+      q = "The points are at origin";
+    }
+    return q;
+  }
+}
+
+Program 55:-
+
+//Write a Dart class to represent a Point in 2 dimension.
+void main() {
+  var pt = Point();
+  print(pt.point(2.0, 4.0));
+}
+
+class Point {
+  String point(double x, double y) {
+    return "Point has the coordinates ($x,$y)";
+  }
+}
+
+Program 56:-
+
+// Write a Dart class to find the distance between 2 points,
+//when the co-ordinates of 2 points are given.
+void main() {
+  var pt2 = Point2();
+  print("Distance between 2 points is ${pt2.distance(1.3, 1.2, 3.0, 8.0)}");
+}
+
+class Point2 {
+  double distance(double x1, double y1, double x2, double y2) {
+    return ((y2 - y1) / (x2 - x1));
+  }
+}
+
+Program 57:-
+
+//Write a Dart Program to print the current date dd-mm-yyyy.
+void main() {
+  var datt = DateT();
+  print(datt.datet());
+}
+
+class DateT {
+  String datet() {
+    String dt;
+    String d1 = "", d2 = "", d3 = "", dtt = "";
+    dt = DateTime.now().toString();
+    for (int i = 0; i <= 3; i++) {
+      d1 += dt[i];
+    }
+    for (int i = 5; i <= 6; i++) {
+      d2 += dt[i];
+    }
+    for (int i = 8; i <= 9; i++) {
+      d3 += dt[i];
+    }
+    dtt = d3 + "-" + d2 + "-" + d1;
+    return dtt;
+  }
+}
+
+Program 58:-
+
+//Write a Dart Program to print the current time in the format HH:mm:ss.
+void main() {
+  var tm = Tym();
+  print(tm.tym());
+}
+
+class Tym {
+  String tym() {
+    String t, ti = "";
+    t = DateTime.now().toString();
+    for (int i = 11; i <= 18; i++) {
+      ti += t[i];
+    }
+    return ti;
+  }
+}
+
+Program 59:-
+
+//Write a Dart program to accept 2 times in MM and find the difference in minutes.
+void main() {
+  var hmdif = HM2();
+  print("Difference in minutes is ${hmdif.hm2(12, 40)}");
+}
+
+class HM2 {
+  int hm2(int min1, int min2) {
+    int dif;
+    if (min1 > min2) {
+      dif = min1 - min2;
+    } else {
+      dif = min2 - min1;
+    }
+    return dif;
+  }
+}
+
+Program 60:-
+
+
